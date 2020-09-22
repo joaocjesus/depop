@@ -1,10 +1,11 @@
 require('dotenv').config();
+
 const environments = require('../constants/environments');
 
 const driversConfig = {
   drivers: {
     chrome: {
-      version: '83.0.4103.39'
+      version: '85.0.4183.87'
     },
     firefox: {
       // Geckodriver version
