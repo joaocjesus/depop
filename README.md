@@ -27,7 +27,7 @@ profile here: https://github.com/joaocjesus/wdio6-components-boilerplate.
 - The skeleton of the framework is set in master branch with no tests in that branch.
 - The work done to test the login page was committed to the `feature/login_test` branch.
 - To easily review the work done on top of the framework I've submitted a Pull Request with the tests that can be found here:
-[Tests pull request](https://github.com/joaocjesus/depop/pull/1)
+[Tests pull request](https://github.com/joaocjesus/depop/pull/1/files)
  
 **Out of scope**
 - Not testing Login link in header to navigate to Login page (should be in a separate header test)
