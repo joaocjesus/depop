@@ -54,7 +54,7 @@ class Header extends Component {
 
   public mobileMenuButton(): Button {
     this.mobileMenuButtonComponent =
-      this.mobileMenuButtonComponent || new Button(this.appendTestId('mobileNavigation'));
+      this.mobileMenuButtonComponent || new Button(this.append('[data-id="mobileNavigation"]'));
     return this.mobileMenuButtonComponent;
   }
 
