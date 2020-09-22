@@ -41,6 +41,9 @@ profile here: https://github.com/joaocjesus/wdio6-components-boilerplate.
 - Chrome browser (with matched driver version in `config/wdio.conf.js`)
     - Currently set to version 85. Please modify wdio.conf.js if you require a different chromedriver version
     - For `chromedriver` version information please visit: https://chromedriver.chromium.org/
+- Login credentials
+    - Currently configured with user johncjesus_depop
+    - Please do change the credentials in .env file located in project root folder
 
 ## Setup
 - Clone this repository locally (eg: `git clone git@github.com:joaocjesus/depop.git`)
