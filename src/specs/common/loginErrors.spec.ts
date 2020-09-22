@@ -5,7 +5,7 @@ import { TEST_USER, TEST_USER_PASSWORD } from '../../constants/global';
 const INVALID_USERNAME = 'INVALID_USERNAME';
 const INVALID_PASSWORD = 'INVALID_PASSWORD';
 
-describe('Login', () => {
+describe('Login page', () => {
   const page = new LoginPage();
   const loginForm = page.loginForm();
 
@@ -13,24 +13,9 @@ describe('Login', () => {
     navigate('/login');
   });
 
-  it('header is displayed', () => {
-    expect(page.header().isVisible()).toEqual(true);
-  });
-
   it('section title is displayed', () => {
     expect(page.sectionTitle().isVisible()).toEqual(true);
-  });
-
-  it('Login button is displayed', () => {
-    expect(loginForm.loginButton().isVisible()).toEqual(true);
-  });
-
-  it('Facebook button is displayed', () => {
-    expect(page.facebookButton().isVisible()).toEqual(true);
-  });
-
-  it('Sign up button is displayed', () => {
-    expect(page.signupButton().isVisible()).toEqual(true);
+    expect(page.sectionTitle().getText()).toEqual('Login to Continue');
   });
 
   describe('Error', () => {
@@ -70,6 +55,4 @@ describe('Login', () => {
       expect(loginForm.errorMessage().isNotVisible()).toEqual(true);
     });
   });
-
-
 });
