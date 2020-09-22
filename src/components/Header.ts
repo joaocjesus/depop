@@ -10,6 +10,7 @@ class Header extends Component {
   private messagesButtonComponent: Button;
   private profileButtonComponent: Button;
   private mobileMenuButtonComponent: Button;
+  private searchMobileButtonComponent: Button;
 
   constructor() {
     super('header');
@@ -59,9 +60,9 @@ class Header extends Component {
   }
 
   public searchMobileButton(): Button {
-    this.mobileMenuButtonComponent = this.mobileMenuButtonComponent ||
+    this.searchMobileButtonComponent = this.searchMobileButtonComponent ||
       new Button('div[class*="MobileNavigationLayout"] a[href="/search/"]');
-    return this.mobileMenuButtonComponent;
+    return this.searchMobileButtonComponent;
   }
 
 }
