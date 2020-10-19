@@ -27,8 +27,12 @@ export const setValueWithJS = (element: WebdriverIO.Element | string, value: str
   );
 };
 
-export const navigate = (page: string = '/'): void =>
-  browser.url(`${browser.config.baseUrl}${page}`);
+export const navigate = (page: string = '/'): void => {
+  const url = `${browser.config.baseUrl}${page}`;
+  // tslint:disable-next-line:no-console
+  console.warn('Navigating to', url);
+  browser.url(url);
+};
 
 export const reloadSession = (): void => {
   browser.reloadSession();
